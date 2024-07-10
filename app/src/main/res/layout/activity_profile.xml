@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_img"
+    tools:context=".profileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/UserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/avtar" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Pradeep Singh"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addArticleButton"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/addbutton"
+        android:text="Add Article"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yourArticle"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/combined_shape"
+        android:text="Your Article"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/addArticleButton"
+        app:layout_constraintStart_toStartOf="@+id/addArticleButton"
+        app:layout_constraintTop_toBottomOf="@+id/addArticleButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="119dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/logout"
+        android:text="Logout"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/yourArticle"
+        app:layout_constraintStart_toStartOf="@+id/yourArticle"
+        app:layout_constraintTop_toBottomOf="@+id/yourArticle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/days_one"
+        android:text="Designed By GPRS"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
